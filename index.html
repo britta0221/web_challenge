@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+    <link href="search.css" rel="stylesheet">
+    <link href="bootstrap.min.css?v=4.1.3" rel="stylesheet">
+
+    <script src="jquery-2.1.1.min.js"></script>
+    <script src="bootstrap.min.js?v=4.1.3"></script>
+
+
+    <script src="search.js"></script>
+
+
+</head>
+<body>
+<section class="u-py-100 u-h-100vh u-flex-center main-bg-back-1">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-8 mx-auto">
+                 <p>
+                 </p>
+                 <br/>
+
+                  <!-- <h1 class="text-center text-black mb-5">Toronto Waste Lookup</h1> -->
+                  <div class="logo">
+
+                  </div>
+                  <br/>
+                  <!-- <p class="text-center text-black mb-5">Do you want more traffic, leads, and sales? Enter your URL below.<br>if you want to grow your traffic and revenue.</p> -->
+                  <div class="col-lg-12 mx-auto">
+                     <form class="form-inline align-items-stretch" onkeydown="if(event.keyCode==13){return false;}">
+
+                        <div class="form-group col-lg-11 ">
+                           <input type="text" class=" col-lg-12" placeholder="" name="key_word" id = 'key_word' onchange="clearResult();">
+                        </div>
+
+
+                        <button type="button" class="btn btn-green " id="search" name="search" onclick="searchResult();">
+
+                        </button>
+
+                     </form>
+                  </div>
+                  <br/>
+                  <div class="list-group" id = "btn-list" name = "btn-list" style="float: left;width:100%">
+                    <!-- <p>searchResult xxxxxxxxxx</p> -->
+                  </div>
+
+                <div class="fav-list-group" id = "favourited-list" name = "favourited-list" style="float: left;width:100%" >
+                     <!--  <p>favoutited xxxxxxxx</p> -->
+                  </div>
+
+
+               </div>
+            </div>
+         </div>
+</section>
+
+
+
+</body>
+</html>
+
