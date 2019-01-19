@@ -190,12 +190,12 @@ function likeIt(data){
   var myId = data.id;
   //alert(myId);
   if (!localStorage.hasOwnProperty(myId)){
-    alert("add!");
+    //alert("add!");
     localStorage.setItem(myId,"1");
     //$("#"+myId).toggleClass('saved');
 
   }else{
-    alert("remove!");
+    //alert("remove!");
     //alert(myId);
     localStorage.removeItem(myId);
     //$("#"+myId).toggleClass('notSaved');
