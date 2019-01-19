@@ -130,7 +130,7 @@ function searchResult(){
         }
         
         //alert(JSON.stringify(search_result));
-        //$("#test").html('werrr');
+        
         createList(search_result);
 
 
@@ -164,14 +164,12 @@ function createList(search_result_list){
         '<div class="description">'+HTMLDecode(ele.item_description)+'</div>'+
         '</div>';
         item_class = "notSaved";
-     //alert(temp_class);
+     
      })
 
     $("#btn-list").html(str);
     //var test = $("#btn-list").html();
     //alert(test);
-
-    //alert(temp_class);
 
 }
 
@@ -192,11 +190,11 @@ function likeIt(data){
   if (!localStorage.hasOwnProperty(myId)){
     //alert("add!");
     localStorage.setItem(myId,"1");
-    //$("#"+myId).toggleClass('saved');
+    
 
   }else{
     //alert("remove!");
-    //alert(myId);
+    
     localStorage.removeItem(myId);
     //$("#"+myId).toggleClass('notSaved');
   }
@@ -219,7 +217,7 @@ function clearResult(){
 
   var input_value_now = $("#key_word").val();
   if (input_value_now == ""){
-    //alert("收到");
+    
     // var div = document.getElementById("btn-list");
     // div.empty();
     $("#btn-list").empty();
@@ -231,8 +229,8 @@ function clearResult(){
 $(function(){
     document.onkeydown = function(e){  
       var ev = document.all ? window.event : e;
-      if(ev.keyCode==13) {// 如（ev.ctrlKey && ev.keyCode==13）为ctrl+Center 触发
-          
+      // enter event
+      if(ev.keyCode==13) {          
           searchResult();
 
       }
