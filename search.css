@@ -1,0 +1,90 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+.list-group{
+  font-size: 0.5rem;
+}
+
+.fav-list-group{
+
+  font-size: 0.5rem;
+  background-color: #EFFEF3;
+}
+
+.wrapper .search .btn-list .li .favourited-list{
+    float: left;
+    height:50px;
+    line-height:50px;
+    text-align:center;
+    width:120px;
+    border:1px solid #0bc7b7;
+    border-radius:3px;
+    margin-left:10px;
+    color:#0bc7b7;
+    cursor:pointer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "title title description description description" "title title description description description" "title title description description description";
+}
+
+.favourited_container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "title title description description description" "title title description description description" "title title description description description";
+}
+
+.title { grid-area: title; }
+
+.description { grid-area: description; }
+
+
+.notSaved{
+
+  background-color: transparent;
+  border: none;
+  font-size:17px;
+  color:#ccc;
+  cursor:pointer;
+}
+
+.saved{
+  font-size:17px;
+  background-color: transparent;
+  border: none;
+  color:#08A733;
+}
+
+
+.btn-green{
+
+  background-image:url(search_icon.jpg);
+  background-size: 100%100%;
+  width:40px;
+  height:40px;
+}
+
+.logo{
+  background-image:url(logo.jpg);
+  background-size: 100%100%;
+  width:700px;
+  height:80px;
+}
